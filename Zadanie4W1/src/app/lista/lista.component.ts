@@ -7,9 +7,10 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-lista',
+  standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './lista.component.html',
-  styleUrl: './lista.component.css'
+  styleUrls: ['./lista.component.css']
 })
 export class ListaComponent {
   private readonly listaService = inject(ListaService);
